@@ -28,7 +28,7 @@ initial_counts_df = pd.read_csv("Inputs\Assistants_counts.csv")
 initial_counts = dict(
     zip(initial_counts_df["Username"], initial_counts_df["count"]))
 
-####################################### Apply algo #############################################################
+####################################### Distribute #############################################################
 
 # Apply the algorithm with initial counts
 assignment, assistant_counts = distribute_assistants(

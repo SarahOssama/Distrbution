@@ -17,6 +17,8 @@ def initialize_counts(dataframe):
     initial_counts = dict(zip(dataframe["Username"], dataframe["count"]))
     return initial_counts
 
+####################################### Manage Inputs #############################################################
+
 
 # Read input data from CSV files using Pandas
 students_df = pd.read_csv("Inputs/students.csv")
@@ -34,6 +36,8 @@ initial_reviewers_counts_df = pd.read_csv("Inputs/Reviewers_counts.csv")
 
 initial_assistants_counts = initialize_counts(initial_assistants_counts_df)
 initial_reviewers_counts = initialize_counts(initial_reviewers_counts_df)
+
+####################################### Distribute #############################################################
 
 # Apply the algorithm for assigning assistants
 assignment_assistants, assistant_counts = distribute_staff(
