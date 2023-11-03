@@ -122,3 +122,11 @@ updated_reviewers_counts_df = pd.DataFrame(
 updated_assistants_counts_df.to_csv(
     "Inputs/Assistants_counts.csv", index=False)
 updated_reviewers_counts_df.to_csv("Inputs/Reviewers_counts.csv", index=False)
+
+# pd.set_option('display.max_columns', None)
+# pd.set_option('display.max_rows', None)
+
+# print("Studentdf")
+# print(students_df)
+
+# print(assignment_reviewers)
